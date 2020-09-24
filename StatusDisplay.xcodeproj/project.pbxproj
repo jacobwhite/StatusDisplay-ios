@@ -15,6 +15,13 @@
 		166AC369251B058600E9C060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166AC367251B058600E9C060 /* LaunchScreen.storyboard */; };
 		166AC374251B058700E9C060 /* StatusDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166AC373251B058700E9C060 /* StatusDisplayTests.swift */; };
 		166AC37F251B058700E9C060 /* StatusDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166AC37E251B058700E9C060 /* StatusDisplayUITests.swift */; };
+		166AC393251B05AB00E9C060 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166AC392251B05AB00E9C060 /* WidgetKit.framework */; };
+		166AC395251B05AB00E9C060 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166AC394251B05AB00E9C060 /* SwiftUI.framework */; };
+		166AC398251B05AB00E9C060 /* StatusDisplayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166AC397251B05AB00E9C060 /* StatusDisplayWidget.swift */; };
+		166AC39B251B05AD00E9C060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166AC39A251B05AD00E9C060 /* Assets.xcassets */; };
+		166AC39D251B05AD00E9C060 /* StatusDisplayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 166AC399251B05AB00E9C060 /* StatusDisplayWidget.intentdefinition */; };
+		166AC39E251B05AD00E9C060 /* StatusDisplayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 166AC399251B05AB00E9C060 /* StatusDisplayWidget.intentdefinition */; };
+		166AC3A1251B05AD00E9C060 /* StatusDisplayWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 166AC390251B05AB00E9C060 /* StatusDisplayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +39,31 @@
 			remoteGlobalIDString = 166AC358251B058200E9C060;
 			remoteInfo = StatusDisplay;
 		};
+		166AC39F251B05AD00E9C060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 166AC351251B058200E9C060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 166AC38F251B05AB00E9C060;
+			remoteInfo = StatusDisplayWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		166AC3A5251B05AD00E9C060 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				166AC3A1251B05AD00E9C060 /* StatusDisplayWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1650CCA8251D612600872217 /* StatusDisplayWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatusDisplayWidgetExtension.entitlements; sourceTree = "<group>"; };
 		166AC359251B058200E9C060 /* StatusDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		166AC35C251B058200E9C060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		166AC35E251B058200E9C060 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +78,14 @@
 		166AC37A251B058700E9C060 /* StatusDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		166AC37E251B058700E9C060 /* StatusDisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDisplayUITests.swift; sourceTree = "<group>"; };
 		166AC380251B058700E9C060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166AC390251B05AB00E9C060 /* StatusDisplayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StatusDisplayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		166AC392251B05AB00E9C060 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		166AC394251B05AB00E9C060 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		166AC397251B05AB00E9C060 /* StatusDisplayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDisplayWidget.swift; sourceTree = "<group>"; };
+		166AC399251B05AB00E9C060 /* StatusDisplayWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = StatusDisplayWidget.intentdefinition; sourceTree = "<group>"; };
+		166AC39A251B05AD00E9C060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		166AC39C251B05AD00E9C060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16745EC1251D5B7D008B076C /* StatusDisplay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatusDisplay.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +110,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		166AC38D251B05AB00E9C060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166AC395251B05AB00E9C060 /* SwiftUI.framework in Frameworks */,
+				166AC393251B05AB00E9C060 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		166AC350251B058200E9C060 = {
 			isa = PBXGroup;
 			children = (
+				1650CCA8251D612600872217 /* StatusDisplayWidgetExtension.entitlements */,
 				166AC35B251B058200E9C060 /* StatusDisplay */,
 				166AC372251B058700E9C060 /* StatusDisplayTests */,
 				166AC37D251B058700E9C060 /* StatusDisplayUITests */,
+				166AC396251B05AB00E9C060 /* StatusDisplayWidget */,
+				166AC391251B05AB00E9C060 /* Frameworks */,
 				166AC35A251B058200E9C060 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +141,7 @@
 				166AC359251B058200E9C060 /* StatusDisplay.app */,
 				166AC36F251B058700E9C060 /* StatusDisplayTests.xctest */,
 				166AC37A251B058700E9C060 /* StatusDisplayUITests.xctest */,
+				166AC390251B05AB00E9C060 /* StatusDisplayWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +149,7 @@
 		166AC35B251B058200E9C060 /* StatusDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				16745EC1251D5B7D008B076C /* StatusDisplay.entitlements */,
 				166AC35C251B058200E9C060 /* AppDelegate.swift */,
 				166AC35E251B058200E9C060 /* SceneDelegate.swift */,
 				166AC360251B058200E9C060 /* ContentView.swift */,
@@ -136,6 +187,26 @@
 			path = StatusDisplayUITests;
 			sourceTree = "<group>";
 		};
+		166AC391251B05AB00E9C060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				166AC392251B05AB00E9C060 /* WidgetKit.framework */,
+				166AC394251B05AB00E9C060 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		166AC396251B05AB00E9C060 /* StatusDisplayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				166AC397251B05AB00E9C060 /* StatusDisplayWidget.swift */,
+				166AC399251B05AB00E9C060 /* StatusDisplayWidget.intentdefinition */,
+				166AC39A251B05AD00E9C060 /* Assets.xcassets */,
+				166AC39C251B05AD00E9C060 /* Info.plist */,
+			);
+			path = StatusDisplayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,10 +217,12 @@
 				166AC355251B058200E9C060 /* Sources */,
 				166AC356251B058200E9C060 /* Frameworks */,
 				166AC357251B058200E9C060 /* Resources */,
+				166AC3A5251B05AD00E9C060 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				166AC3A0251B05AD00E9C060 /* PBXTargetDependency */,
 			);
 			name = StatusDisplay;
 			productName = StatusDisplay;
@@ -192,6 +265,23 @@
 			productReference = 166AC37A251B058700E9C060 /* StatusDisplayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		166AC38F251B05AB00E9C060 /* StatusDisplayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166AC3A2251B05AD00E9C060 /* Build configuration list for PBXNativeTarget "StatusDisplayWidgetExtension" */;
+			buildPhases = (
+				166AC38C251B05AB00E9C060 /* Sources */,
+				166AC38D251B05AB00E9C060 /* Frameworks */,
+				166AC38E251B05AB00E9C060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StatusDisplayWidgetExtension;
+			productName = StatusDisplayWidgetExtension;
+			productReference = 166AC390251B05AB00E9C060 /* StatusDisplayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +302,9 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 166AC358251B058200E9C060;
 					};
+					166AC38F251B05AB00E9C060 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 166AC354251B058200E9C060 /* Build configuration list for PBXProject "StatusDisplay" */;
@@ -230,6 +323,7 @@
 				166AC358251B058200E9C060 /* StatusDisplay */,
 				166AC36E251B058700E9C060 /* StatusDisplayTests */,
 				166AC379251B058700E9C060 /* StatusDisplayUITests */,
+				166AC38F251B05AB00E9C060 /* StatusDisplayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +353,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		166AC38E251B05AB00E9C060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166AC39B251B05AD00E9C060 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -269,6 +371,7 @@
 				166AC35D251B058200E9C060 /* AppDelegate.swift in Sources */,
 				166AC35F251B058200E9C060 /* SceneDelegate.swift in Sources */,
 				166AC361251B058200E9C060 /* ContentView.swift in Sources */,
+				166AC39E251B05AD00E9C060 /* StatusDisplayWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +391,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		166AC38C251B05AB00E9C060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166AC398251B05AB00E9C060 /* StatusDisplayWidget.swift in Sources */,
+				166AC39D251B05AD00E9C060 /* StatusDisplayWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,6 +412,11 @@
 			isa = PBXTargetDependency;
 			target = 166AC358251B058200E9C060 /* StatusDisplay */;
 			targetProxy = 166AC37B251B058700E9C060 /* PBXContainerItemProxy */;
+		};
+		166AC3A0251B05AD00E9C060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 166AC38F251B05AB00E9C060 /* StatusDisplayWidgetExtension */;
+			targetProxy = 166AC39F251B05AD00E9C060 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,8 +551,10 @@
 		166AC384251B058700E9C060 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StatusDisplay/StatusDisplay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StatusDisplay/Preview Content\"";
 				DEVELOPMENT_TEAM = 98FB988RRU;
@@ -455,8 +574,10 @@
 		166AC385251B058700E9C060 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StatusDisplay/StatusDisplay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StatusDisplay/Preview Content\"";
 				DEVELOPMENT_TEAM = 98FB988RRU;
@@ -557,6 +678,50 @@
 			};
 			name = Release;
 		};
+		166AC3A3251B05AD00E9C060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatusDisplayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98FB988RRU;
+				INFOPLIST_FILE = StatusDisplayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.jacobwhite.StatusDisplay.StatusDisplayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		166AC3A4251B05AD00E9C060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StatusDisplayWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98FB988RRU;
+				INFOPLIST_FILE = StatusDisplayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.jacobwhite.StatusDisplay.StatusDisplayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,6 +757,15 @@
 			buildConfigurations = (
 				166AC38A251B058700E9C060 /* Debug */,
 				166AC38B251B058700E9C060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		166AC3A2251B05AD00E9C060 /* Build configuration list for PBXNativeTarget "StatusDisplayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166AC3A3251B05AD00E9C060 /* Debug */,
+				166AC3A4251B05AD00E9C060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
